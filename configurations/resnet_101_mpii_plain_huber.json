@@ -1,0 +1,17 @@
+{
+    "training_type": "mpii_kp",
+    "split_type": "deploy",
+    "loss_type": {
+        "_type": "SimpleHuberLoss",
+        "cutoff_magnitude": 1.0
+    },
+    "batch_size": 32,
+    "optimizer_type": "adam",
+    "lr_schedule": [[0, 10e-4], [25, 10e-4], [40, 10e-5], [50, 10e-6]],
+    "pretrain": true,
+    "network_backbone_settings": {
+        "_type": "resnet101",
+	"conv_at_end": true,
+        "num_outputs": 80
+    }
+}

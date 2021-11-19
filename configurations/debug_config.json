@@ -1,0 +1,18 @@
+{
+    "training_type": "wflw",
+    "split_type": "mini",
+    "loss_type": {
+        "_type": "ProbHuberLoss",
+        "min_reasonable": 1.0,
+        "max_reasonable": 50.0
+    },
+    "batch_size": 2,
+    "optimizer_type": "adam",
+    "pretrain": false,
+    "lr_schedule": [[0, 1e-3], [45, 1e-3], [55, 1e-4], [60, 1e-5]],
+    "output_step_schedule": [[0, [0, 0]], [5, [1, 1]], [10, [0,1]], [15, [2, 2]], [20, [0,2]], [25, [3, 3]], [30, [0,3]], [35, [4]], [40, [0,4]]],
+    "network_backbone_settings": {
+        "_type": "resnet101",
+        "num_outputs": 490
+    }
+}

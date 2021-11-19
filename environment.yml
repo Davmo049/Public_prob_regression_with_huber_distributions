@@ -1,0 +1,17 @@
+name: UncertaintyKeypoints
+channels:
+  - conda-forge
+  - anaconda
+dependencies:
+  - python>=3.5
+  - numpy # vectors and matrices
+  - pillow # Like PIL
+  - mkl # Intel acceleration
+  - pytorch # neural nets, backprop and other
+  - matplotlib # plotting
+  - scikit-image # some image processing
+  - tensorboard # needed for tensorboardX?
+  - tensorboardx # visualizing
+  - tqdm # iter tool
+  - pip:
+    - opencv-python
