@@ -2,15 +2,21 @@
 This repository contains the code used for the implementation of the paper "Probabilistic Regression with HuberDistributions"
 
 # Requirements:
-conda (download from conda.io)
-liblapack-dev (sudo apt-get install liblapack-dev)
-blas
-make
-gcc
+- conda (download from conda.io)
+
+- liblapack-dev (sudo apt-get install liblapack-dev)
+
+- blas
+
+- make
+
+- gcc
 
 # setup:
 conda install environment.yaml
+
 cd mathlib; make; cd ..
+
 cd ImageTools; make; cd ..
 
 # How to use:
